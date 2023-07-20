@@ -3,7 +3,8 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
+@import "vendor/swiper-comments.scss";
 
 // Global
 // ---------------------------------
@@ -23,6 +24,12 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/data-tabs.scss";
+@import "blocks/tabs.scss";
+@import "blocks/tabs-fqa.scss";
+@import "blocks/accordion.scss";
+@import "blocks/data-accordion.scss"
+
 
 // ---------------------------------
 
