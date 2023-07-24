@@ -5,5 +5,6 @@ import './index';
 import './index-accordions';
 import {initializeSwiper} from './slider';
 import {initializeSwiperComments} from './slider-comments';
+import './video';
 initializeSwiper();
 initializeSwiperComments();

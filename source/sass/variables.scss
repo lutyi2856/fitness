@@ -16,7 +16,9 @@ $color-additional-accent: #103AAE;
 $color-additional-background: #F8F9FC;
 $color-banners: #ED0233;
 $color-footer: #030A1A;
-
+$color-border: rgba(120, 120, 120, 0.20);
+$color-number: #E8E8E8;
+$color-border-tab: #D10A42;
 // Gradient
 
 $gradient-additional-gradient: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
@@ -25,7 +27,7 @@ $gradient-main-block: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23
 
 // Typography
 
-$ff-alumniSans-SemiBold: "Alumni Sans", "Arial", sans-serif;
+$ff-alumniSans: "Alumni Sans", "Arial", sans-serif;
 $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 
 // переменная используемая в html для подключения скейлинга
