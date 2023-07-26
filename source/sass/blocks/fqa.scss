@@ -1,0 +1,120 @@
+.fqa {
+  padding: 120px 0;
+  background-color: $color-additional-background;
+}
+
+.fqa__tabs {
+  max-width: 100%;
+}
+
+.fqa__title {
+  font-family: $ff-alumniSans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+}
+
+.fqa__tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fqa__tabs-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 300px;
+  padding: 1px 0 0 1px;
+}
+
+.fqa__tabs-control {
+  margin: 0 0 10px 0;
+  padding: 18px 106px 18px 107px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  outline: 1px solid $color-button-fqa;
+  border: none;
+  opacity: 1;
+  transition: background $trans-default;
+  background: $color-transparent;
+}
+
+.fqa__tabs-content {
+  width: 860px;
+}
+
+.fqa__tabs-control.is-active {
+  background: $gradient-fill-button;
+  color: $color-default-white;
+}
+
+.fqa__accordion {
+  padding-left: 40px;
+}
+
+.fqa__accordion-element {
+  padding: 32px 0 31px 0;
+  margin: 0;
+  border-bottom: 1px solid $color-fqa-border;
+
+  &:first-child {
+    border-top: 1px solid $color-fqa-border;
+  }
+}
+
+.fqa__accordion-wrapper-title {
+  display: flex;
+  align-items: center;
+}
+
+.fqa__accordion-button {
+  width: 41px;
+  height: 41px;
+  border: 1px solid $color-advantage-pivotal;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: auto;
+  transition: background-color $trans-default;
+  background-color: $color-transparent;
+}
+
+.fqa__accordion-element.is-active .fqa__accordion-button {
+  background-color: $color-advantage-pivotal;
+}
+
+.fqa__accordion-element.is-active .fqa__accordion-button-plus {
+  display: none;
+}
+
+.fqa__accordion-element:not(.is-active) .fqa__accordion-button-minus {
+  display: none;
+}
+
+.fqa__accordion-button-plus {
+  display: block;
+}
+
+.fqa__accordion-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.fqa__accordion-text {
+  margin: 8px 0 0 0;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.fqa__accordion-wrapper {
+  padding: 0;
+}

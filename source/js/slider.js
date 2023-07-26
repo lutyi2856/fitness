@@ -11,6 +11,7 @@ export function initializeSwiper() {
       },
       768: {
         slidesPerView: 4,
+        spaceBetween: 40,
       },
     },
     direction: 'horizontal',

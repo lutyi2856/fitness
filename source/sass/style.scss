@@ -4,7 +4,6 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper";
-@import "vendor/swiper-comments.scss";
 
 // Global
 // ---------------------------------
@@ -26,13 +25,23 @@
 @import "blocks/custom-select";
 @import "blocks/data-tabs.scss";
 @import "blocks/tabs.scss";
-@import "blocks/tabs-fqa.scss";
 @import "blocks/accordion.scss";
 @import "blocks/data-accordion.scss";
 @import "blocks/main.scss";
 @import "blocks/header.scss";
 @import "blocks/information.scss";
 @import "blocks/subscription.scss";
+@import "blocks/competitions";
+@import "blocks/coach.scss";
+@import "blocks/swiper-slide.scss";
+@import "blocks/advantage.scss";
+@import "blocks/stock.scss";
+@import "blocks/fqa.scss";
+@import "blocks/comments.scss";
+@import "blocks/swiper-comments.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+
 
 
 
