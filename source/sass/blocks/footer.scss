@@ -33,9 +33,6 @@
 
 .footer__social-list {
   @include list-style;
-}
-
-.footer__social-list {
   display: flex;
   flex-wrap: wrap;
 }

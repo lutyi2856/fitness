@@ -1,6 +1,17 @@
 .subscription {
   padding: 120px 0;
   background-color: $color-additional-background;
+  background-image: url("../../img/chips.png");
+  background-position: bottom -120px right calc(50% - 640px);
+  background-size: 329px 384px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  @include vp-1199 {
+    padding: calc(100px + (120 - 100) * ((100vw - 768px) / (1199 - 768))) 0;
+    background-size: 450px 445px;
+    background-position: bottom -120px right calc(50% - 260px);
+  }
 }
 
 .subscription__title {
@@ -11,4 +22,10 @@
   line-height: 103%;
   letter-spacing: 1.62px;
   margin: 0 0 25px 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin: 0 0 26px 0;
+  }
 }

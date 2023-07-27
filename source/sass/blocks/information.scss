@@ -1,5 +1,9 @@
 .information {
   padding: 120px 0;
+
+  @include vp-1199 {
+    padding: calc(100px + (120 - 100) * ((100vw - 768px) / (1199 - 768))) 0;
+  }
 }
 
 .information__wrapper {
@@ -7,10 +11,19 @@
   flex-wrap: wrap;
   position: relative;
   padding-bottom: 114px;
+
+  @include vp-1199 {
+    padding-bottom: 83px;
+  }
 }
 
 .information__wrapper-description {
   padding: 0 85px 0 59px;
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .information__title {
@@ -20,6 +33,13 @@
   font-weight: 600;
   line-height: 103%;
   letter-spacing: 1.44px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    text-align: center;
+    margin: 0 0 6px 0;
+  }
 }
 
 .information__subtitle {
@@ -27,15 +47,41 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 150%;
+
+  @include vp-1199 {
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
 }
 
 .information__description {
   width: 355px;
   margin: 0;
+
+  @include vp-1199 {
+    text-align: center;
+    margin: 0 auto 50px auto;
+    width: 502px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }
 
 .information__wrapper-image {
   flex-basis: 56.9%;
+
+  @include vp-1199 {
+    flex-basis: 100%;
+  }
+}
+
+@include vp-1199 {
+  .information__wrapper-image img {
+    width: 100%;
+  }
 }
 
 .information__play-button {
@@ -72,4 +118,9 @@
 
 .information__video {
   border: none;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
 }
