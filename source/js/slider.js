@@ -2,14 +2,23 @@ import Swiper from './vendor/swiper';
 
 export function initializeSwiper() {
   const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 0,
     breakpoints: {
-      320: {
+      768: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      768: {
+
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+
+      1200: {
         slidesPerView: 4,
         spaceBetween: 40,
       },

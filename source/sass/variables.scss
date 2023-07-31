@@ -28,12 +28,21 @@ $color-button-fqa: rgba(16, 38, 84, 0.20);
 $color-fqa-border: rgba(28, 51, 116, 0.20);
 $color-input-border: #74819C;
 $color-tabs: rgba(16, 38, 84, 0.50);
+$color-video-background: #000000;
+$color-card: #495A7D;
+$color-coach: #B6BDCC;
 // Gradient
 
 $gradient-additional-gradient: linear-gradient(129deg, #D10A42 0%, #0041CA 100%);
 $gradient-fill-button: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
 $gradient-main-block: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
 $gradient-contact: linear-gradient(90deg, #102654 50%, #ffffff 50%);
+$gradient-subscription: linear-gradient(
+    180deg, 
+    #f8f9fc 0px, #f8f9fc 951px,
+    #fff 951px, #fff 1480px
+  );
+
 
 // Typography
 

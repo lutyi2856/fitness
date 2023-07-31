@@ -29,6 +29,14 @@
   padding: 0;
   /* Fix of Webkit flickering */
   z-index: 1;
+
+  @media (max-width: 1199px) {
+    width: 566px;
+  }
+
+  @media (max-width: 767px) {
+    width: 226px;
+  }
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;

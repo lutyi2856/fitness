@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   width: 341px;
-  margin: 0 auto 39px auto;
+  margin: 0 auto 37px auto;
   position: relative;
 
   &::after {
@@ -21,6 +21,11 @@
   @include vp-1199 {
     margin: 0 auto 45px auto;
   }
+
+  @include vp-767 {
+    margin: 0 auto 35px auto;
+    width: 100%;
+  }
 }
 
 .tabs__control {
@@ -32,7 +37,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 150%;
-  padding: 0 0 18px 0;
+  padding: 0 0 12px 0;
   border-bottom: 2px solid $color-transparent;
   color: $color-tabs;
 
@@ -44,6 +49,10 @@
 
   @include vp-1199 {
     font-size: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
   }
 }
 
@@ -76,6 +85,10 @@
     justify-content: center;
     row-gap: 40px;
   }
+
+  @include vp-1199 {
+    row-gap: 35px;
+  }
 }
 
 .tabs__element-item {
@@ -83,7 +96,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: $color-default-white;
-  padding: 64px 73px;
+  padding: 60px 0 62px 0;
   border: 4px solid $color-default-white;
 
   &:hover {
@@ -91,23 +104,43 @@
     border-image: $gradient-fill-button;
     border-image-slice: 1;
   }
+
+  &:hover .tabs__item-link {
+    background: $gradient-fill-button;
+    color: $color-default-white;
+    outline: none;
+  }
+
+  @include vp-1199 {
+    padding: 55px 0;
+  }
 }
 
 .tabs__item-title {
   width: 100%;
-  margin: 0 0 22px 0;
+  margin: 0 0 12px 0;
   text-align: center;
   font-size: 26px;
   font-weight: 700;
   line-height: 110%;
+
+  @include vp-767 {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+  }
 }
 
 .tabs__item-description {
   width: 100%;
-  margin: 0 0 59px 0;
+  margin: 0 0 42px 0;
   text-align: center;
   font-weight: 400;
   line-height: 150%;
+
+  @include vp-767 {
+    margin: 0 0 50px 0;
+    color: $color-card;
+  }
 }
 
 .tabs__item-wrapper {
@@ -120,13 +153,13 @@
   color: $color-additional-accent;
   font-size: 60px;
   font-weight: 700;
-  line-height: 150%;
-  margin-bottom: 59px;
+  line-height: 100%;
+  margin-bottom: 48px;
 
   &::after {
     content: attr(data-price);
     position: absolute;
-    top: -10px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
     color: $color-number;
@@ -135,23 +168,48 @@
     line-height: 150%;
     opacity: 0.47;
   }
+
+  @include vp-767 {
+    margin-bottom: 50px;
+
+    &::after {
+      font-size: 80px;
+      top: -10px;
+    }
+  }
 }
 
 .tabs__item-price {
   margin-right: 14px;
   z-index: 1;
+
+  @include vp-767 {
+    font-size: 48px;
+  }
 }
 
 .tabs__price-icon {
   z-index: 1;
+
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .tabs__item-link {
-  padding: 24px 42px 24px 43px;
+  padding: 27px 42px 28px 43px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
   line-height: 100%;
-  border: 2px solid $color-text-default;
+  outline: 2px solid $color-text-default;
+
+  @include vp-767 {
+    width: 206px;
+    padding: 27px 0 28px 0;
+    justify-content: center;
+    display: flex;
+  }
 }

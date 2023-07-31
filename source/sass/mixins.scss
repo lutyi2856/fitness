@@ -188,6 +188,34 @@
   }
 }
 
+@mixin gradient {
+  background: linear-gradient(
+    180deg, 
+    #f8f9fc 0px, #f8f9fc 851px,
+    #fff 852px, #fff 100%
+  );
+
+  @include vp-1199 {
+    background: linear-gradient(180deg, #f8f9fc 95%,#fff 5.62%);
+  }
+
+  @include vp-1199 {
+    background: linear-gradient(180deg, #f8f9fc 100%,#fff 0);
+  }
+}
+
+@mixin gradient-contact {
+  background: linear-gradient(90deg, #102654 50%, #ffffff 50%);
+
+  @include vp-1199 {
+    background: linear-gradient(180deg, #102654 0, #102654 324px, #ffffff 325px, #ffffff 675px);
+  }
+
+  @include vp-1199 {
+    background: linear-gradient(180deg, #102654 0, #102654 386px, #ffffff 325px, #ffffff 100%);
+  }
+}
+
 // Mobile first
 
 // @mixin vp-375 {
