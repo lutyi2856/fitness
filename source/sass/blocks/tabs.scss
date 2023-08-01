@@ -19,7 +19,8 @@
   }
 
   @include vp-1199 {
-    margin: 0 auto 45px auto;
+    width: 329px;
+    margin: 0 auto 43px auto;
   }
 
   @include vp-767 {
@@ -49,6 +50,7 @@
 
   @include vp-1199 {
     font-size: 18px;
+    padding: 0 0 10px 0;
   }
 
   @include vp-767 {
@@ -83,10 +85,11 @@
   @include vp-1199 {
     grid-template-columns: repeat(1, 442px);
     justify-content: center;
-    row-gap: 40px;
+    column-gap: 0;
+    row-gap: 41px;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     row-gap: 35px;
   }
 }
@@ -112,7 +115,7 @@
   }
 
   @include vp-1199 {
-    padding: 55px 0;
+    padding: 59px 0 59px 0;
   }
 }
 

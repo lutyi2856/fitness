@@ -19,6 +19,10 @@
   margin-right: auto;
   display: flex;
   align-items: center;
+
+  @include vp-1199 {
+    padding-bottom: 3px;
+  }
 }
 
 .header__telephon {
