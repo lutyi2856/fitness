@@ -2,7 +2,7 @@
   padding: 135px 0 120px 0;
 
   @include vp-1199 {
-    padding: 91px 0 100px 0;
+    padding: 91px 0 58px 0;
   }
 
   @include vp-767 {
@@ -20,7 +20,7 @@
   letter-spacing: 1.62px;
 
   @include vp-1199 {
-    margin: 0 0 40px 0;
+    margin: 0 0 38px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
@@ -139,6 +139,7 @@
   @include vp-767 {
     margin: 55px 0 0 0;
     justify-content: center;
+    padding-bottom: 1px;
 
     &::after {
       left: 50%;
@@ -156,7 +157,7 @@
     gap: 30px;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     flex-wrap: wrap;
   }
 }
@@ -209,11 +210,17 @@
   color: $color-advantage-pivotal;
   font-weight: 400;
   line-height: 140%;
+  word-spacing: 1px;
 
   @include vp-767 {
+    padding-right: 29px;
     margin: 0 0 35px 0;
     width: 100%;
   }
+}
+
+.stock__item-text--discount {
+  word-spacing: 2px;
 }
 
 .stock__item-link {

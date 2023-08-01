@@ -3,10 +3,10 @@
   background-color: $color-footer;
 
   @include vp-1199 {
-    padding: 45px 0 44px 0;
+    padding: 44px 0 44px 0;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     padding: 50px 0 52px 0;
   }
 }
@@ -16,6 +16,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-1199 {
+    justify-content: start;
+  }
 }
 
 .footer__nav-list {
@@ -39,7 +43,7 @@
   }
 
   @include vp-1199 {
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   @include vp-767 {
@@ -102,6 +106,10 @@
 }
 
 .footer__nav {
+  @include vp-1199 {
+    margin: 0 auto 0 62px;
+  }
+
   @include vp-767 {
     width: 100%;
     margin-top: -20px;
@@ -111,5 +119,8 @@
 
 .footer__link-logo {
   padding-top: 10px;
-  margin-right: 5px;
+
+  @include vp-1199 {
+    padding-top: 0;
+  }
 }

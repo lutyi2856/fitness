@@ -3,7 +3,7 @@
   background-color: $color-additional-background;
 
   @include vp-1199 {
-    padding: 100px 0 100px 0;
+    padding: 100px 0 76px 0;
   }
 
   @include vp-767 {
@@ -23,9 +23,10 @@
     margin: 0 0 40px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
+    text-align: center;
   }
 
-  @include vp-1199 {
+  @include vp-767 {
     margin: 0 0 42px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
@@ -49,7 +50,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 1px 1px 40px 1px;
+    padding: 1px 1px 38px 1px;
   }
 
   @include vp-767 {
@@ -120,6 +121,12 @@
     border-top: 1px solid $color-fqa-border;
   }
 
+  @include vp-1199 {
+    &:last-child {
+      padding-bottom: 23px;
+    }
+  }
+
   @include vp-767 {
     padding: 20px 0 20px 0;
   }
@@ -166,6 +173,13 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 100%;
+  word-spacing: 2px;
+
+  @include vp-1199 {
+    max-width: 85%;
+    word-spacing: 2.5px;
+    line-height: 120%;
+  }
 
   @include vp-767 {
     max-width: 85%;
@@ -177,6 +191,10 @@
   font-size: 18px;
   line-height: 140%;
   max-width: 660px;
+
+  @include vp-1199 {
+    max-width: 82%;
+  }
 
   @include vp-767 {
     margin: 12px 0 0 0;

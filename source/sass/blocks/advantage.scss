@@ -3,7 +3,7 @@
   background-color: $color-additional-background;
 
   @include vp-1199 {
-    padding: 92px 0 100px 0;
+    padding: 92px 0 92px 0;
   }
 
   @include vp-767 {
@@ -22,7 +22,7 @@
   letter-spacing: 1.62px;
 
   @include vp-1199 {
-    margin: 0 0 50px 0;
+    margin: 0 0 42px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
   }
@@ -35,25 +35,22 @@
 }
 
 .advantage__wrapper-dscription {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 460px 240px 460px;
+  grid-template-rows: auto auto;
 
   @include vp-1199 {
-    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px 239px 111px;
+    justify-items: center;
   }
 }
 
 .advantage__wrapper-list {
   @include list-style;
-  padding: 0 60px;
-  width: 460px;
 
   @include vp-1199 {
-    width: 100%;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
   }
 
   @include vp-767 {
@@ -61,8 +58,23 @@
   }
 }
 
+.advantage__wrapper-list--first {
+  @include vp-1199 {
+    grid-column: 1 /2;
+    grid-row: 1 / 5;
+  }
+}
+
+.advantage__wrapper-list--second {
+  @include vp-1199 {
+    grid-column: 2 /3;
+    grid-row: 1 / 5;
+  }
+}
+
 .advantage__wrapper-item {
   display: flex;
+  margin: 0 60px;
 
   &:first-child {
     padding-bottom: 75px;
@@ -71,11 +83,11 @@
   }
 
   @include vp-1199 {
-    flex-basis: 50%;
+    margin: 0;
 
     &:first-child {
       padding-bottom: 0;
-      margin-bottom: 0;
+      margin-bottom: 323px;
       border-bottom: none;
     }
   }
@@ -89,6 +101,12 @@
       margin-bottom: 0;
       border-bottom: none;
     }
+  }
+}
+
+.advantage__wrapper-item--second {
+  @include vp-1199 {
+    padding-left: 15px;
   }
 }
 
@@ -113,10 +131,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 100%;
-
-  @include vp-1199 {
-    margin-top: 10px;
-  }
 }
 
 .advantage__item-wrapper-title {
@@ -137,8 +151,9 @@
   padding-top: 5px;
 
   @include vp-1199 {
-    margin: 0 0 15px 0;
+    margin: 0 0 2px 0;
     font-size: 20px;
+    padding-top: 0;
   }
 }
 
@@ -149,15 +164,14 @@
 
 .advantage__wrapper-pivotal {
   padding: 55px 34px 65px 34px;
-  background-color: $color-advantage-pivotal;
-  width: 240px;
-  margin-top: 11px;
-  height: 308px;
+  background: $gradient-advantage;
+  margin: 12px 0 0 0;
 
   @include vp-1199 {
-    margin: 50px 0 50px 0;
-    width: 57.55%;
-    padding: 45px 34px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    padding: 34px 34px 0 34px;
+    width: 65.2%;
   }
 
   @include vp-767 {
@@ -175,7 +189,7 @@
   line-height: 100%;
 
   @include vp-1199 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -188,7 +202,7 @@
   line-height: 100%;
 
   @include vp-1199 {
-    margin: 0 0 30px 0;
+    margin: 0 0 19px 0;
     font-size: 22px;
   }
 }

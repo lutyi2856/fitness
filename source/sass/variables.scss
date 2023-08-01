@@ -37,12 +37,8 @@ $gradient-additional-gradient: linear-gradient(129deg, #D10A42 0%, #0041CA 100%)
 $gradient-fill-button: linear-gradient(151deg, #ED0233 0%, #003EB7 100%);
 $gradient-main-block: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
 $gradient-contact: linear-gradient(90deg, #102654 50%, #ffffff 50%);
-$gradient-subscription: linear-gradient(
-    180deg, 
-    #f8f9fc 0px, #f8f9fc 951px,
-    #fff 951px, #fff 1480px
-  );
-
+$gradient-subscription: linear-gradient(180deg,#f8f9fc 0px, #f8f9fc 951px,#fff 951px, #fff 1480px);
+$gradient-advantage: linear-gradient(180deg, #1C3374 307px, #ffffff 0);
 
 // Typography
 
@@ -72,14 +68,14 @@ $trans-600: 0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
-$vp-320:                            320px;
-$vp-375:                            375px;
-$vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1200:                           1200px;
-$vp-1280:                           1280px;
-$vp-1440:                           1440px;
-$vp-1920:                           1920px;
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1200: 1200px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
 
 // Retina
 // ---------------------------------
