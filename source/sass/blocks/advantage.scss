@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 63px 0 70px 0;
+    padding: 62px 0 68px 0;
   }
 }
 
@@ -28,7 +28,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 52px 0;
+    margin: 0 0 43px 0;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -43,6 +43,11 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 120px 239px 111px;
     justify-items: center;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-template-rows: 191px 200px 237px 192px 192px;
   }
 }
 
@@ -63,12 +68,22 @@
     grid-column: 1 /2;
     grid-row: 1 / 5;
   }
+
+  @include vp-767 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
 }
 
 .advantage__wrapper-list--second {
   @include vp-1199 {
     grid-column: 2 /3;
     grid-row: 1 / 5;
+  }
+
+  @include vp-767 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
   }
 }
 
@@ -98,7 +113,7 @@
 
     &:first-child {
       padding-bottom: 0;
-      margin-bottom: 0;
+      margin-bottom: 506px;
       border-bottom: none;
     }
   }
@@ -107,6 +122,10 @@
 .advantage__wrapper-item--second {
   @include vp-1199 {
     padding-left: 15px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
   }
 }
 
@@ -155,6 +174,12 @@
     font-size: 20px;
     padding-top: 0;
   }
+
+  @include vp-767 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    padding-top: 0;
+  }
 }
 
 .advantage__item-description {
@@ -176,6 +201,10 @@
 
   @include vp-767 {
     width: 100%;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    margin: 0;
+    padding: 37px 34px 0 37px;
   }
 }
 
@@ -191,6 +220,10 @@
   @include vp-1199 {
     margin-bottom: 5px;
   }
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }
 
 .advantage__pivotal-title {
@@ -204,6 +237,10 @@
   @include vp-1199 {
     margin: 0 0 19px 0;
     font-size: 22px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 14px 0;
   }
 }
 
@@ -234,6 +271,18 @@
   @include vp-767 {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
+  }
+}
+
+.advantage__item-title--margin {
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.advantage__wrapper-item--mobile {
+  @include vp-767 {
+    padding-top: 8px;
   }
 }

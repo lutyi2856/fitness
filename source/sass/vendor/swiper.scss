@@ -183,6 +183,9 @@
 }
 :root {
   --swiper-navigation-size: 30px;
+  @media (max-width: 767px) {
+    --swiper-navigation-size: 21px;
+  }
   /*
   --swiper-navigation-color: var(--swiper-theme-color);
   */

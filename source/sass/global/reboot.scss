@@ -127,3 +127,7 @@ button,
 [type="submit"] {
   appearance: none;
 }
+
+.container.background-logo img {
+  background: $color-text-default;
+}
