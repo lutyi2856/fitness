@@ -23,3 +23,113 @@
     opacity: 0.8;
   }
 }
+
+.btn-dark-background {
+  transition: color, background-color $trans-default;
+
+  @include hover-focus {
+    background-color: $color-default-white;
+    color: $color-additional-accent;
+    outline: none;
+
+    &:active {
+      background-color: $color-default-white;
+      color: $color-text-default;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
+
+.btn-player {
+  transition: stroke, stroke-opacity, fill $trans-default;
+
+  &:hover .information__icon-border {
+    stroke: $color-text-default;
+    stroke-opacity: 1;
+  }
+
+  &:hover .information__icon-background {
+    fill: $color-default-white;
+  }
+
+  &:hover .information__icon {
+    fill: $color-text-default;
+  }
+
+  &:focus-visible .information__icon-border {
+    stroke: $color-text-default;
+    stroke-opacity: 1;
+  }
+
+  &:focus-visible .information__icon-background {
+    fill: $color-default-white;
+  }
+
+  &:focus-visible .information__icon {
+    fill: $color-text-default;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active .information__icon-border {
+    stroke: $color-text-default;
+    stroke-opacity: 1;
+  }
+
+  &:active .information__icon-background {
+    fill: $color-default-white;
+  }
+
+  &:active .information__icon {
+    fill: $color-text-default;
+  }
+
+  &:disabled .information__icon-border {
+    stroke: $color-text-default;
+    stroke-opacity: 0.4;
+  }
+
+  &:disabled .information__icon-background {
+    fill: $color-default-white;
+    opacity: 0.4;
+  }
+
+  &:disabled .information__icon {
+    fill: $color-text-default;
+    opacity: 0.4;
+  }
+}
+
+.btn-blue-background {
+  transition: background, color $trans-default;
+
+  @include hover-focus {
+    background: $gradient-fill-button;
+    color: $color-default-white;
+    outline: none;
+
+    &:active {
+      background: $gradient-fill-button;
+      outline: none;
+      color: $color-btn-active;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+}
+
+.btn-link-dark {
+  @include link-dark;
+}
+
+.btn-link-light {
+  @include link-light;
+}

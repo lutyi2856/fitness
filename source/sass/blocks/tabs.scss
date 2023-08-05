@@ -41,11 +41,29 @@
   padding: 0 0 12px 0;
   border-bottom: 2px solid $color-transparent;
   color: $color-tabs;
+  transition: color, border-bottom $trans-default;
 
   &.is-active {
     pointer-events: none;
     color: $color-text-default;
     border-bottom: 2px solid $color-border-tab;
+  }
+
+  &:hover {
+    color: $color-text-default;
+    border-bottom: 2px solid $color-border-tab;
+  }
+
+  &:focus-visible {
+    color: $color-text-default;
+    border-bottom: 2px solid $color-border-tab;
+    outline: none;
+  }
+
+  &:disabled {
+    color: $color-text-default;
+    border-bottom: none;
+    opacity: 0.3;
   }
 
   @include vp-1199 {
@@ -114,6 +132,7 @@
   background-color: $color-default-white;
   padding: 60px 0 62px 0;
   border: 4px solid $color-default-white;
+  transition: border, border-image, border-image-slice $trans-default;
 
   &:hover {
     border: 4px solid;
@@ -125,6 +144,12 @@
     background: $gradient-fill-button;
     color: $color-default-white;
     outline: none;
+  }
+
+  &:active .tabs__item-link {
+    background: $gradient-fill-button;
+    outline: none;
+    color: $color-btn-active;
   }
 
   @include vp-1199 {
@@ -226,6 +251,17 @@
   text-transform: uppercase;
   line-height: 100%;
   outline: 2px solid $color-text-default;
+  transition: background, color $trans-default;
+
+  &:focus-visible {
+    background: $gradient-fill-button;
+    color: $color-default-white;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @include vp-767 {
     width: 206px;

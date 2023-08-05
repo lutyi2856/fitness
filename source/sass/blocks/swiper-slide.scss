@@ -13,6 +13,7 @@
     font-weight: 700;
     line-height: 18px;
     color: $color-default-white;
+    transition: display $trans-default;
   }
 
   &:hover .swiper-slide__wrapper-description {
@@ -26,6 +27,10 @@
   @include vp-1199 {
     &::after {
       top: 249px;
+    }
+
+    &:active .swiper-slide__wrapper-description {
+      display: block;
     }
   }
 

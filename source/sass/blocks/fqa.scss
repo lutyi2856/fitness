@@ -71,8 +71,20 @@
   outline: 1px solid $color-button-fqa;
   border: none;
   opacity: 1;
-  transition: background $trans-default;
+  transition: outline $trans-default;
   background: $color-transparent;
+
+  &:hover {
+    outline: 1px solid $color-text-default;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-text-default;
+  }
+
+  &:disabled {
+    color: $color-button-fqa;
+  }
 
   @include vp-1199 {
     margin: 0;
@@ -154,8 +166,36 @@
   flex-wrap: wrap;
   padding: 0;
   margin-left: auto;
-  transition: background-color $trans-default;
+  transition: background-color, stroke $trans-default;
   background-color: $color-transparent;
+
+  &:hover {
+    background-color: $color-advantage-pivotal;
+  }
+
+  &:hover .fqa__accordion-button-plus-color {
+    stroke: $color-default-white;
+  }
+
+  &:focus-visible {
+    background-color: $color-advantage-pivotal;
+  }
+
+  &:focus-visible .fqa__accordion-button-plus-color {
+    stroke: $color-default-white;
+  }
+
+  &:active {
+    background-color: $color-advantage-pivotal;
+  }
+
+  &:active .fqa__accordion-button-plus-color {
+    stroke: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @include vp-1199 {
     width: 32px;

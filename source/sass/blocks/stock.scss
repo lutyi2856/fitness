@@ -126,6 +126,7 @@
   letter-spacing: 0.7px;
   text-transform: uppercase;
   position: relative;
+  width: max-content;
 
   &::after {
     content: "";
@@ -233,6 +234,7 @@
   text-transform: uppercase;
   padding-bottom: 5px;
   position: relative;
+  width: max-content;
 
   &::after {
     content: "";
