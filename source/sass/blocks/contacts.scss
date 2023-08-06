@@ -112,6 +112,25 @@
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  color: $color-default-white;
+  transition: border-bottom, color, outline $trans-default;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:hover::placeholder {
+    color: $color-default-white;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    border-bottom: none;
+  }
+
+  &:focus-visible::placeholder {
+    opacity: 0;
+  }
 
   @include vp-1199 {
     width: 100%;
@@ -127,6 +146,25 @@
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  color: $color-default-white;
+  transition: border-bottom, color, outline $trans-default;
+
+  &:hover {
+    border-bottom: 1px solid $color-default-white;
+  }
+
+  &:hover::placeholder {
+    color: $color-default-white;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    border-bottom: none;
+  }
+
+  &:focus-visible::placeholder {
+    opacity: 0;
+  }
 
   @include vp-1199 {
     width: 100%;

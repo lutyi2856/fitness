@@ -2,7 +2,9 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 
-
+const phoneParent = document.querySelector('.contacts__field-phone');
+const contactsForm = document.querySelector('.contacts__form');
+const itemInput = document.querySelector('.contacts__input-name');
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    window.form.initPhoneInput(phoneParent);
+    window.form.validateForm(contactsForm);
+    window.form.validateFormElement(itemInput, true);
   });
 });
 

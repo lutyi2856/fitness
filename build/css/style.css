@@ -1224,28 +1224,28 @@ button.swiper-pagination-bullet {
   font-weight: 300;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/robotoCondensed-Light.woff2") format("woff2");
+  src: url("../fonts/robotoCondensed-Light.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/robotoCondensed-Light.woff2") format("woff2");
+  src: url("../fonts/robotoCondensed-Light.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("/fonts/robotoCondensed-Bold.woff2") format("woff2");
+  src: url("../fonts/robotoCondensed-Bold.woff2") format("woff2");
 }
 @font-face {
   font-style: normal;
   font-weight: 700;
   font-family: "Alumni Sans";
   font-display: swap;
-  src: url("/fonts/alumniSans-SemiBold.woff2") format("woff2");
+  src: url("../fonts/alumniSans-SemiBold.woff2") format("woff2");
 }
 *,
 *::before,
@@ -5090,6 +5090,46 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
+  -webkit-transition: border-bottom, color, outline 0.3s ease;
+  transition: border-bottom, color, outline 0.3s ease;
+}
+.contacts__input-name:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.contacts__input-name:hover::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-name:hover::-moz-placeholder {
+  color: #ffffff;
+}
+.contacts__input-name:hover:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-name:hover::-ms-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-name:hover::placeholder {
+  color: #ffffff;
+}
+.contacts__input-name:focus-visible {
+  outline: 1px solid #ffffff;
+  border-bottom: none;
+}
+.contacts__input-name:focus-visible::-webkit-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-name:focus-visible::-moz-placeholder {
+  opacity: 0;
+}
+.contacts__input-name:focus-visible:-ms-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-name:focus-visible::-ms-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-name:focus-visible::placeholder {
+  opacity: 0;
 }
 @media (max-width: 1199px) {
   .contacts__input-name {
@@ -5106,6 +5146,46 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+  color: #ffffff;
+  -webkit-transition: border-bottom, color, outline 0.3s ease;
+  transition: border-bottom, color, outline 0.3s ease;
+}
+.contacts__input-phone:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.contacts__input-phone:hover::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-phone:hover::-moz-placeholder {
+  color: #ffffff;
+}
+.contacts__input-phone:hover:-ms-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-phone:hover::-ms-input-placeholder {
+  color: #ffffff;
+}
+.contacts__input-phone:hover::placeholder {
+  color: #ffffff;
+}
+.contacts__input-phone:focus-visible {
+  outline: 1px solid #ffffff;
+  border-bottom: none;
+}
+.contacts__input-phone:focus-visible::-webkit-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-phone:focus-visible::-moz-placeholder {
+  opacity: 0;
+}
+.contacts__input-phone:focus-visible:-ms-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-phone:focus-visible::-ms-input-placeholder {
+  opacity: 0;
+}
+.contacts__input-phone:focus-visible::placeholder {
+  opacity: 0;
 }
 @media (max-width: 1199px) {
   .contacts__input-phone {
