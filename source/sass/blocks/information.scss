@@ -38,7 +38,7 @@
   }
 }
 
-.information__title {
+.information__wrapper-description h2 {
   margin: 0 0 12px 0;
   font-family: $ff-alumniSans;
   font-size: 48px;
@@ -61,7 +61,7 @@
   }
 }
 
-.information__subtitle {
+.information__wrapper-description h3 {
   margin: 0 0 40px 0;
   font-size: 18px;
   font-weight: 400;
@@ -78,7 +78,7 @@
   }
 }
 
-.information__description {
+.information__wrapper-description p {
   width: 355px;
   margin: 0;
 

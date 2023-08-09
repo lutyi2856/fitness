@@ -49,7 +49,7 @@
   width: 100%;
   text-align: right;
   padding-right: 50px;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0;
   display: block;
   color: $color-default-white;
   font-family: $ff-alumniSans;
@@ -59,7 +59,7 @@
   letter-spacing: 1.44px;
 
   @include vp-1199 {
-    margin-bottom: 9px;
+    margin: 0 0 9px 0;
     padding-right: 2px;
     font-size: calc(34px + (48 - 34) * ((100vw - 768px) / (1199 - 768)));
     letter-spacing: 1.02px;
@@ -67,7 +67,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 14px;
+    margin: 0 0 14px 0;
     font-size: calc(28px + (34 - 28) * ((100vw - 320px) / (767 - 320)));
     letter-spacing: 0.84px;
     line-height: 100%;
@@ -128,7 +128,8 @@
   }
 }
 
-.main__subtitle {
+.main__subtitle-list {
+  @include list-style;
   width: 34.22%;
   padding: 0 5px 37px 0;
   color: $color-default-white;
@@ -160,4 +161,8 @@
   @include vp-767 {
     display: none;
   }
+}
+
+.main__subtitle-list p {
+  margin: 0 0 0 0;
 }

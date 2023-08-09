@@ -6,8 +6,8 @@ export function initializeSwiperComments() {
     rtl: false,
     direction: 'horizontal',
     navigation: {
-      nextEl: '.swiper-comments-button-next',
-      prevEl: '.swiper-comments-button-prev',
+      nextEl: '.swiper-comments__button-next',
+      prevEl: '.swiper-comments__button-prev',
     },
   });
 }

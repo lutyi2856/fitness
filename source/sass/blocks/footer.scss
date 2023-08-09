@@ -48,28 +48,36 @@
 
   @include vp-767 {
     margin-right: 0;
+  }
+}
 
-    &:nth-child(2) {
-      grid-column-start: 1;
-    }
+.footer__nav-item--subscription {
+  @include vp-767 {
+    grid-column-start: 1;
+  }
+}
 
-    &:nth-child(3) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      padding-left: 55.19%;
-    }
+.footer__nav-item--stock {
+  @include vp-767 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    padding-left: 55.19%;
+  }
+}
 
-    &:nth-child(4) {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-    }
+.footer__nav-item--coach {
+  @include vp-767 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+}
 
-    &:nth-child(5) {
-      grid-column-start: 2;
-      grid-row-start: 3;
-    }
+.footer__nav-item--schedule {
+  @include vp-767 {
+    grid-column-start: 2;
+    grid-row-start: 3;
   }
 }
 
@@ -134,6 +142,12 @@
 
 .footer__social-link {
   display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
 
   &:hover .footer__icon-background {
     fill: $color-additional-accent;

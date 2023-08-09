@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Фитнес центр">
-  <link rel="preload" href="/fonts/robotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/robotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/robotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/alumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Фитнес</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="icon" href="favicon.ico"> 
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -52,9 +52,13 @@
         <div class="container">
           <div class="main__wrapper">
             <div class="main__wrapper-description">
-              <span class="main__town">омск</span>
+              <p class="main__town">омск</p>
               <h1 class="main__hero-title">Фитнес центр</h1>
-              <h2 class="main__subtitle">Тренажёрный зал Групповые занятия Кардио-зона</h2>
+              <ul class="main__subtitle-list">
+                <li class="main__list-item"><p>Тренажёрный зал</p></li>
+                <li class="main__list-item"><p>Групповые занятия</p></li>
+                <li class="main__list-item"><p>Кардио-зона</p></li>
+              </ul>
               <a class="main__link-subscription btn-dark-background" href="#subscription"
                 aria-label="Перейти к выбору абонемента.">
                 Купить абонемент</a>
@@ -74,7 +78,7 @@
         </div>
       </section>
       <section id="information" class="information">
-        <div class="container-expanded">
+        <div class="container--expanded">
           <div class="information__wrapper">
             <div class="information__wrapper-description">
               <h2 class="information__title">Тренажерный зал</h2>
@@ -155,7 +159,8 @@
               <div class="tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
                 <div class="tabs__controls" data-tabs="controls">
                   <button class="tabs__control" type="button" data-tabs="control">1 месяц</button>
-                  <button class="tabs__control" type="button" data-tabs="control">6 месяцев</button>
+                  <button class="tabs__control tabs__control--half-year" type="button" data-tabs="control">6
+                    месяцев</button>
                   <button class="tabs__control" type="button" data-tabs="control">12 месяцев</button>
                 </div>
                 <div class="tabs__content" data-tabs="content">
@@ -166,14 +171,10 @@
                         <p class="tabs__item-description">12&nbsp;занятий</p>
                         <div class="tabs__item-wrapper" data-price="5000">
                           <span class="tabs__item-price">5000</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -184,14 +185,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;17:00</p>
                         <div class="tabs__item-wrapper" data-price="1700">
                           <span class="tabs__item-price">1700</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -202,14 +199,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;22:00</p>
                         <div class="tabs__item-wrapper" data-price="2700">
                           <span class="tabs__item-price">2700</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -224,14 +217,10 @@
                         <p class="tabs__item-description">12&nbsp;занятий</p>
                         <div class="tabs__item-wrapper" data-price="4000">
                           <span class="tabs__item-price">4000</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -242,14 +231,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;17:00</p>
                         <div class="tabs__item-wrapper" data-price="1400">
                           <span class="tabs__item-price">1400</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -260,14 +245,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;22:00</p>
                         <div class="tabs__item-wrapper" data-price="2000">
                           <span class="tabs__item-price">2000</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -282,14 +263,10 @@
                         <p class="tabs__item-description">12&nbsp;занятий</p>
                         <div class="tabs__item-wrapper" data-price="3000">
                           <span class="tabs__item-price">3000</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -300,14 +277,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;17:00</p>
                         <div class="tabs__item-wrapper" data-price="1100">
                           <span class="tabs__item-price">1100</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -318,14 +291,10 @@
                         <p class="tabs__item-description">с&nbsp;8:00 до&nbsp;22:00</p>
                         <div class="tabs__item-wrapper" data-price="1500">
                           <span class="tabs__item-price">1500</span>
-                          <svg class="tabs__price-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="42"
-                            fill="none" viewBox="0 0 30 42">
-                            <path fill="#102654" fill-rule="evenodd" d="M0 17h6v6H0v-6Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M3.659 28.321V18h6v10.321H21v6H9.659V42h-6v-7.679H0v-6h3.659Z" clip-rule="evenodd" />
-                            <path fill="#102654" fill-rule="evenodd"
-                              d="M18.5 6H10v11h8.5a5.5 5.5 0 1 0 0-11ZM4 0v23h14.5C24.851 23 30 17.851 30 11.5S24.851 0 18.5 0H4Z"
-                              clip-rule="evenodd" />
+                          <svg class="tabs__price-icon" width="30" height="42" role="img"
+                            aria-label="Иконка корзина." fill="none" viewBox="0 0 30 42" aria-hidden="true" focusable="false"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="img/sprite.svg#rubles"></use>
                           </svg>
                         </div>
                         <a href="#" class="tabs__item-link" aria-label="Перейти для заказа абонемента.">купить
@@ -376,8 +345,8 @@
       <section id="coach" class="coach">
         <div class="container">
           <h2 class="coach__title">Тренеры</h2>
-          <div class="swiper-container">
-            <div class="swiper swiper__position">
+          <div class="container--swiper">
+            <div class="swiper swiper--position">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -579,15 +548,15 @@
               </div>
 
               <!-- If we need navigation buttons -->
-              <div class="swiper-slide__button-prev swiper-button-prev"></div>
-              <div class="swiper-slide__button-next swiper-button-next"></div>
+              <div class="swiper__slide-button-prev swiper-button-prev"></div>
+              <div class="swiper__slide-button-next swiper-button-next"></div>
 
             </div>
           </div>
         </div>
       </section>
       <section class="advantage">
-        <div class="container-expanded">
+        <div class="container--expanded">
           <div class="advantage__wrapper">
             <h2 class="advantage__title">Наши преимущества</h2>
             <div class="advantage__wrapper-dscription">
@@ -1115,7 +1084,7 @@
         <div class="container">
           <div class="comments__wrapper">
             <h2 class="comments__title">Отзывы</h2>
-            <div class="swiper-container">
+            <div class="container--swiper">
               <div class="swiper-comments">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper swiper-comments__wrapper">
@@ -1161,8 +1130,8 @@
                 </div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev swiper-comments-button-next"></div>
-                <div class="swiper-button-next swiper-comments-button-prev"></div>
+                <div class="swiper-button-prev swiper-comments__button-next"></div>
+                <div class="swiper-button-next swiper-comments__button-prev"></div>
 
               </div>
             </div>
@@ -1174,15 +1143,16 @@
           <div class="contacts__wrapper">
             <div class="contacts__wrapper-form">
               <h2 class="contacts__form-title">Бесплатное занятие </h2>
-              <div class="contacts__form-container" data-form-validate data-message-extra="Заполните обязательные поля">
+              <div class="contacts__form-container" data-form-validate data-callback="base">
                 <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="get">
-                  <div class="contacts__field-name" data-matrix-limitation="letters" data-required
-                    data-message-base="Введите имя" data-message-extra="Имя должно быть не менее 1 символов">
+                  <div class="contacts__field-name" data-validate-type="text" data-limitation="name"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required>
                     <label class="contacts__label-name visually-hidden" for="name">Имя</label>
-                    <input class="contacts__input-name" type="text" id="name" name="name" required placeholder="Имя" minlength="1">
+                    <input class="contacts__input-name" type="text" id="name" name="name" required placeholder="Имя"
+                      minlength="1">
                     <span class="contacts__nput-message input-message"></span>
                   </div>
-                  <div class="contacts__field-phone" data-limitation="digit"  data-required
+                  <div class="contacts__field-phone" data-limitation="digit" data-required
                     data-message-base="Введите телефон" data-message-extra="Только цифры">
                     <label class="contacts__label-phone visually-hidden" for="phone">Телефон</label>
                     <input class="contacts__input-phone" type="tel" id="phone" name="phone" required
@@ -1196,7 +1166,7 @@
             </div>
             <div id="contacts__wrapper-contacts" class="contacts__wrapper-contacts">
               <h2 class="contacts__infomation-title">Контакты</h2>
-              <ul class="contacts__list contacts__list--first">
+              <ul class="contacts__list">
                 <li class="contacts__item">
                   <h3 class="contacts__title">Адрес:</h3>
                   <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
@@ -1247,16 +1217,16 @@
               <li class="footer__nav-item">
                 <a class="footer__nav-item-link" href="#information" aria-label="Перейти к услугам.">Услуги</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--subscription">
                 <a class="footer__nav-item-link" href="#subscription" aria-label="Перейти к абонентам.">Абонементы</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--stock">
                 <a class="footer__nav-item-link" href="#stock" aria-label="Перейти к акциям.">Акции</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--coach">
                 <a class="footer__nav-item-link" href="#coach" aria-label="Перейти к тренерам.">Тренеры</a>
               </li>
-              <li class="footer__nav-item">
+              <li class="footer__nav-item footer__nav-item--schedule">
                 <a class="footer__nav-item-link" href="#contacts__wrapper-contacts"
                   aria-label="Перейти к расписанию.">Расписание</a>
               </li>
@@ -1275,7 +1245,7 @@
               </a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link" aria-label="Перейти в вк.">
+              <a href="#" class="footer__social-link" aria-label="Перейти в однокласники.">
                 <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                   fill="currentColor">
                   <path class="footer__icon-background" fill="#fff"
@@ -1286,7 +1256,7 @@
               </a>
             </li>
             <li class="footer__social-item">
-              <a href="#" class="footer__social-link" aria-label="Перейти в вк.">
+              <a href="#" class="footer__social-link" aria-label="Перейти в редит.">
                 <svg class="footer__social-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                   fill="currentColor">
                   <path class="footer__icon-background" fill="#fff"

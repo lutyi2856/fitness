@@ -77,15 +77,17 @@
     text-align: left;
     padding: 0 0 12px 0;
 
-    &:nth-child(2) {
-      min-width: 69px;
-      padding-right: 7px;
-    }
-
     &:last-child {
       min-width: 77px;
       padding-right: 4px;
     }
+  }
+}
+
+.tabs__control--half-year {
+  @include vp-767 {
+    min-width: 69px;
+    padding-right: 7px;
   }
 }
 

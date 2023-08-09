@@ -44,7 +44,7 @@
   }
 }
 
-.swiper-comments-button-next {
+.swiper-comments__button-next {
   left: 244px;
 
   @include vp-1199 {
@@ -58,7 +58,7 @@
   }
 }
 
-.swiper-comments-button-prev {
+.swiper-comments__button-prev {
   right: 244px;
 
   @include vp-1199 {
@@ -87,7 +87,7 @@
   }
 }
 
-.swiper-comments__description-name {
+.swiper-comments__wrapper-description p:first-child {
   margin: 0 0 20px 0;
   font-size: 20px;
   font-weight: 700;
@@ -102,7 +102,7 @@
   }
 }
 
-.swiper-comments__description-text {
+.swiper-comments__wrapper-description p:last-child {
   margin: 0;
   font-weight: 400;
   line-height: 140%;

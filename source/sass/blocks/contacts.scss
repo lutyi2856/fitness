@@ -62,7 +62,7 @@
   }
 }
 
-.contacts__form {
+.contacts__form-container form {
   display: flex;
   flex-wrap: wrap;
 
@@ -104,7 +104,7 @@
   }
 }
 
-.contacts__input-name {
+.contacts__field-name input {
   width: 205px;
   background: none;
   border: none;
@@ -138,7 +138,7 @@
   }
 }
 
-.contacts__input-phone {
+.contacts__field-phone input {
   width: 205px;
   background: none;
   border: none;
@@ -196,9 +196,10 @@
   }
 }
 
-.contacts__list {
+.contacts__wrapper-contacts ul {
   @include list-style;
   width: 50%;
+  border-right: 1px solid $color-input-border;
 
   @include vp-1199 {
     width: 56.7%;
@@ -208,10 +209,11 @@
     width: 100%;
     padding-right: 0;
     margin-bottom: 20px;
+    border-right: none;
   }
 }
 
-.contacts__list-link {
+.contacts__wrapper-contacts ul:last-child {
   @include list-style;
   width: 50%;
   padding-left: 60px;
@@ -227,7 +229,7 @@
   }
 }
 
-.contacts__infomation-title {
+.contacts__wrapper-contacts h2 {
   width: 100%;
   margin: 0 0 31px 0;
   font-family: $ff-alumniSans;
@@ -258,7 +260,7 @@
   }
 }
 
-.contacts__title {
+.contacts__item h3 {
   font-size: 16px;
   font-weight: 700;
   line-height: 100%;
@@ -270,7 +272,19 @@
   }
 }
 
-.contacts__text {
+.contacts__item-link h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  margin: 0 0 8px 0;
+
+  @include vp-1199 {
+    margin: 0 0 13px 0;
+    font-size: 20px;
+  }
+}
+
+.contacts__item p {
   font-size: 14px;
   font-weight: 400;
   line-height: 152.34%;
@@ -282,14 +296,6 @@
   }
 }
 
-.contacts__list--first {
-  border-right: 1px solid $color-input-border;
-
-  @include vp-767 {
-    border-right: none;
-  }
-}
-
 .contacts__item-link {
   margin-bottom: 22px;
 
@@ -298,7 +304,7 @@
   }
 }
 
-.contacts__telephon {
+.contacts__item-link a {
   font-size: 14px;
   font-weight: 400;
   line-height: 152.34%;
@@ -309,13 +315,3 @@
   }
 }
 
-.contacts__email {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 152.34%;
-  display: flex;
-
-  @include vp-1199 {
-    font-size: 18px;
-  }
-}
