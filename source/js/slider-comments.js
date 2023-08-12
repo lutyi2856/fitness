@@ -1,6 +1,7 @@
 import Swiper from './vendor/swiper';
 
 export function initializeSwiperComments() {
+
   const swiperComments = new Swiper('.swiper-comments', {
     slidesPerView: 1,
     rtl: false,
@@ -10,4 +11,7 @@ export function initializeSwiperComments() {
       prevEl: '.swiper-comments__button-prev',
     },
   });
+
+  swiperComments.slideNext();
+  swiperComments.slidePrev();
 }

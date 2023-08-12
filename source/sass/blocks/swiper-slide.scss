@@ -118,6 +118,14 @@
   }
 }
 
+.swiper__next-icon {
+  z-index: 2;
+}
+
+.swiper__prev-icon {
+  z-index: 2;
+}
+
 .swiper-slide__wrapper-image img {
   @include vp-1199 {
     width: 100%;

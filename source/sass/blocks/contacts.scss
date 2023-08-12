@@ -196,7 +196,7 @@
   }
 }
 
-.contacts__wrapper-contacts ul {
+.contacts__wrapper-contacts ul:first-of-type {
   @include list-style;
   width: 50%;
   border-right: 1px solid $color-input-border;
@@ -314,4 +314,3 @@
     font-size: 18px;
   }
 }
-

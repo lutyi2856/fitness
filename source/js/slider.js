@@ -36,4 +36,7 @@ export function initializeSwiper() {
       el: '.swiper-scrollbar',
     },
   });
+
+  swiper.slideNext();
+  swiper.slidePrev();
 }
