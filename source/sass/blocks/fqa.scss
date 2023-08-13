@@ -1,13 +1,13 @@
 .fqa {
-  padding: 120px 0;
+  padding: 120px 0 115px 0;
   background-color: $color-additional-background;
 
   @include vp-1199 {
-    padding: 100px 0 76px 0;
+    padding: 100px 0 46px 0;
   }
 
   @include vp-767 {
-    padding: 70px 0 27px 0;
+    padding: 70px 0 0 0;
   }
 }
 
@@ -34,7 +34,7 @@
   letter-spacing: 1.62px;
 
   @include vp-1199 {
-    margin: 0 0 40px 0;
+    margin: 0 0 39px 0;
     font-size: 42px;
     letter-spacing: 1.26px;
     text-align: center;
@@ -51,6 +51,10 @@
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+
+  @include vp-767 {
+    height: 675px;
+  }
 }
 
 .fqa__tabs-controls {
@@ -64,7 +68,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 1px 1px 38px 1px;
+    padding: 1px 1px 39px 1px;
   }
 
   @include vp-767 {
@@ -103,7 +107,7 @@
   @include vp-1199 {
     margin: 0;
     padding: 0;
-    width: 162px;
+    width: 160px;
     height: 54px;
     align-items: center;
   }
@@ -121,6 +125,10 @@
   @include vp-1199 {
     width: 100%;
   }
+
+  @include vp-767 {
+    height: 549px;
+  }
 }
 
 .fqa__tabs-control.is-active {
@@ -129,7 +137,7 @@
 }
 
 .fqa__accordion-element {
-  padding: 26px 0 24px 0;
+  padding: 27px 0 23px 0;
   margin: 0;
   border-bottom: 1px solid $color-fqa-border;
 
@@ -150,6 +158,8 @@
   }
 
   @include vp-1199 {
+    padding: 25px 0 24px 0;
+
     &:last-child {
       padding-bottom: 23px;
     }
@@ -184,6 +194,7 @@
   background-color: $color-transparent;
   text-transform: uppercase;
   cursor: pointer;
+  margin-right: 2px;
 
   &:hover {
     background-color: $color-advantage-pivotal;
@@ -214,6 +225,12 @@
   }
 
   @include vp-1199 {
+    width: 42px;
+    height: 42px;
+    margin-right: 0;
+  }
+
+  @include vp-767 {
     width: 32px;
     height: 32px;
   }
@@ -242,8 +259,9 @@
   }
 
   @include vp-767 {
-    max-width: 75%;
+    max-width: 74%;
     font-size: 18px;
+    word-spacing: 2px;
   }
 }
 
@@ -272,7 +290,7 @@
   width: 100%;
 }
 
-.fqa__accordion-title--mobile {
+.fqa__accordion-title.fqa__accordion-title--mobile {
   @include vp-767 {
     max-width: 242px;
   }

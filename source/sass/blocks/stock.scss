@@ -2,7 +2,7 @@
   padding: 135px 0 120px 0;
 
   @include vp-1199 {
-    padding: 91px 0 58px 0;
+    padding: 91px 0 60px 0;
   }
 
   @include vp-767 {
@@ -11,7 +11,7 @@
 }
 
 .stock__title {
-  margin: 0 0 34px 0;
+  margin: 0 0 33px 0;
   text-align: center;
   font-family: $ff-alumniSans;
   font-size: 54px;
@@ -108,6 +108,7 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
+  word-spacing: 2px;
 
   @include vp-767 {
     margin: 15px 0 0 0;
@@ -118,7 +119,7 @@
 .stock__information-link {
   display: flex;
   margin-top: auto;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
   color: $color-default-white;
   font-size: 14px;
   font-weight: 700;
@@ -139,7 +140,7 @@
   }
 
   @include vp-767 {
-    margin: 30px 0 0 0;
+    margin: 30px auto 0 auto;
     justify-content: center;
     padding-bottom: 1px;
 
@@ -183,7 +184,7 @@
 
   @include vp-767 {
     flex-basis: 100%;
-    padding: 36px 42px 36px 42px;
+    padding: 36px 42px 40px 42px;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -212,11 +213,21 @@
   color: $color-advantage-pivotal;
   font-weight: 400;
   line-height: 140%;
-  word-spacing: 1px;
+  word-spacing: 3px;
 
   @include vp-767 {
     margin: 0 0 24px 0;
     width: 100%;
+  }
+}
+
+.stock__list-item:first-child p {
+  @include vp-1199 {
+    max-width: 163px;
+  }
+
+  @include vp-767 {
+    max-width: max-content;
   }
 }
 
@@ -232,7 +243,7 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   position: relative;
   width: max-content;
 

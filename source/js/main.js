@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import './video';
 
 const phoneParent = document.querySelector('.contacts__field-phone');
 const contactsForm = document.querySelector('.contacts__form');

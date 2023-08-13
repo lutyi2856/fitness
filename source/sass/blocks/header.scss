@@ -19,9 +19,11 @@
   margin-right: auto;
   display: flex;
   align-items: center;
+  padding-top: 3px;
 
   @include vp-1199 {
-    padding-bottom: 3px;
+    padding-bottom: 4px;
+    padding-top: 0;
   }
 
   @include vp-767 {
@@ -45,5 +47,17 @@
   @include vp-767 {
     font-size: 20px;
     letter-spacing: 0.4px;
+  }
+}
+
+.header__link-logo img {
+  @include vp-1199 {
+    width: 82px;
+    height: 17px;
+  }
+
+  @include vp-767 {
+    width: 69px;
+    height: 24px;
   }
 }

@@ -236,7 +236,7 @@
 }
 
 @mixin gradient {
-  background: linear-gradient(180deg, #f8f9fc 0, #f8f9fc 851px, #ffffff 852px, #ffffff 100%);
+  background: linear-gradient(180deg, #f8f9fc 0, #f8f9fc 844px, #ffffff 845px, #ffffff 100%);
 
   @include vp-1199 {
     background: linear-gradient(180deg, #f8f9fc 94.7%, #ffffff 6.3%);

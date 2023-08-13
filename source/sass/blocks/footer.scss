@@ -110,6 +110,10 @@
   display: flex;
   flex-wrap: wrap;
   padding-right: 2px;
+
+  @include vp-1199 {
+    padding-right: 0;
+  }
 }
 
 .footer__social-item {
@@ -183,8 +187,11 @@
 }
 
 .footer__nav {
+  padding-left: 8px;
+
   @include vp-1199 {
     margin: 0 auto 0 62px;
+    padding-left: 0;
   }
 
   @include vp-767 {
