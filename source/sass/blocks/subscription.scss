@@ -1,23 +1,24 @@
-.subscription {
-  @include gradient;
-}
+// .subscription {
+//   @include gradient;
+// }
 
-.subscription__wrapper-background {
+.subscription {
   padding: 125px 0 240px 0;
-  background-image: url("../img/chips.png");
-  background-position: bottom -30px right calc(50% - 630px);
-  background-size: 471px 494px;
-  background-repeat: no-repeat;
+  background-image:  url("../img/chips.png"), linear-gradient(180deg, #f8f9fc 0, #f8f9fc 844px, #ffffff 845px, #ffffff 100%);
+  background-position: bottom -30px right calc(50% - 630px), 0 0;
+  background-size: 471px 494px, auto;
+  background-repeat: no-repeat, no-repeat;
 
   @include vp-1199 {
     padding: calc(104px + (120 - 104) * ((100vw - 768px) / (1199 - 768))) 0 calc(200px + (240 - 200) * ((100vw - 768px) / (1199 - 768))) 0;
-    background-size: 425px 435px;
-    background-position: bottom -23px right calc(50% - 250px);
+    background-image: url("../img/chips.png"), linear-gradient(180deg, #f8f9fc 94.7%, #ffffff 6.3%);
+    background-size: 425px 435px, auto;
+    background-position: bottom -23px right calc(50% - 250px), 0 0;
   }
 
   @include vp-767 {
     padding: 63px 0 69px 0;
-    background-image: none;
+    background-image: none, linear-gradient(180deg, #f8f9fc 100%, #ffffff 0);
   }
 }
 

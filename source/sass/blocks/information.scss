@@ -96,9 +96,9 @@
   }
 }
 
-.information__description-desctop {
+.information__wrapper-description p:not(:first-of-type) {
   display: flex;
-  margin: 5px 0 0 0;
+  margin: 7px 0 0 0;
 
   @include vp-1199 {
     position: absolute;

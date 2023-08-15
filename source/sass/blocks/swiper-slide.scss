@@ -107,7 +107,7 @@
   }
 }
 
-.swiper__slide-button-prev {
+.swiper-slide__button-prev {
   left: -56px;
   color: $color-slider-button;
 
@@ -120,7 +120,7 @@
   }
 }
 
-.swiper__slide-button-next {
+.swiper-slide__button-next {
   right: -56px;
   color: $color-slider-button;
 
@@ -133,11 +133,11 @@
   }
 }
 
-.swiper__next-icon {
+.swiper-slide__next-icon {
   z-index: 2;
 }
 
-.swiper__prev-icon {
+.swiper-slide__prev-icon {
   z-index: 2;
 }
 

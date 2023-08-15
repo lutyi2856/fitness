@@ -61,6 +61,14 @@
   }
 }
 
+.swiper-comments__next-icon {
+  z-index: 2;
+}
+
+.swiper-comments__prev-icon {
+  z-index: 2;
+}
+
 .swiper-comments__wrapper-image {
   display: flex;
   flex-wrap: wrap;
