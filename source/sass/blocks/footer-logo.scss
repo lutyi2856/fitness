@@ -1,7 +1,7 @@
 .footer-logo {
   display: flex;
   margin-right: 276px;
-  padding-top: 8px;
+  padding-top: 10px;
 
   @include vp-1199 {
     margin-right: calc(62px + (277 - 62) * ((100vw - 768px) / (1199 - 768)));
@@ -16,8 +16,10 @@
 }
 
 .footer-logo img {
-  width: 82px;
-  height: 18px;
+  @include vp-1199 {
+    width: 82px;
+    height: 18px;
+  }
 
   @include vp-767 {
     width: 68px;
