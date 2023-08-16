@@ -1,9 +1,10 @@
 const videoWrapper = document.querySelector('.information__wrapper-video');
-const videoLink = videoWrapper.querySelector('.information__video-link');
-const playButton = videoWrapper.querySelector('.information__play-button');
-const preview = videoWrapper.querySelector('.information__wrapper-image-preview');
+
 
 if (videoWrapper) {
+  const videoLink = videoWrapper.querySelector('.information__video-link');
+  const playButton = videoWrapper.querySelector('.information__play-button');
+  const preview = videoWrapper.querySelector('.information__wrapper-image-preview');
   videoLink.removeAttribute('href');
   videoWrapper.classList.add('information__wrapper-video--enabled');
 

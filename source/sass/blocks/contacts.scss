@@ -200,7 +200,6 @@
 .contacts__wrapper-contacts ul:first-of-type {
   @include list-style;
   width: calc(50% + 4px);
-  // border-right: 1px solid $color-input-border;
   padding-left: 3px;
   position: relative;
 
@@ -227,6 +226,10 @@
     padding-right: 0;
     margin-bottom: 20px;
     border-right: none;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -248,7 +251,7 @@
 
 .contacts__wrapper-contacts h2 {
   width: 100%;
-  margin: 0 0 32px 0;
+  margin: 0 0 31px 0;
   font-family: $ff-alumniSans;
   font-size: 54px;
   font-weight: 800;

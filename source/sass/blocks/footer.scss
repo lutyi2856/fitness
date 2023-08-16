@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 0 51px 0;
+    padding: 49px 0 51px 0;
   }
 }
 
@@ -28,10 +28,11 @@
   flex-wrap: wrap;
 
   @include vp-767 {
-    display: grid;
-    grid-template-columns: 55.19% 44.81%;
-    grid-template-rows: 40px 40px 20px;
     width: 100%;
+    display: block;
+    column-count: 2;
+    column-width: auto;
+    column-gap: 30px;
   }
 }
 
@@ -48,36 +49,13 @@
 
   @include vp-767 {
     margin-right: 0;
-  }
-}
+    break-inside: avoid;
+    margin-bottom: 20px;
+    display: flex;
 
-.footer__nav-item--subscription {
-  @include vp-767 {
-    grid-column-start: 1;
-  }
-}
-
-.footer__nav-item--stock {
-  @include vp-767 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    padding-left: 55.19%;
-  }
-}
-
-.footer__nav-item--coach {
-  @include vp-767 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-  }
-}
-
-.footer__nav-item--schedule {
-  @include vp-767 {
-    grid-column-start: 2;
-    grid-row-start: 3;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -187,16 +165,13 @@
 }
 
 .footer__nav {
-  padding-left: 8px;
-
   @include vp-1199 {
-    margin: 0 auto 0 62px;
-    padding-left: 0;
+    margin-right: auto;
   }
 
   @include vp-767 {
     width: 100%;
-    margin: -20px 0 38px 0;
+    margin: 0 0 26px 0;
   }
 }
 
@@ -207,3 +182,4 @@
     padding-top: 0;
   }
 }
+

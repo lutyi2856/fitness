@@ -1,10 +1,6 @@
-// .subscription {
-//   @include gradient;
-// }
-
 .subscription {
-  padding: 125px 0 240px 0;
-  background-image:  url("../img/chips.png"), linear-gradient(180deg, #f8f9fc 0, #f8f9fc 844px, #ffffff 845px, #ffffff 100%);
+  padding: 125px 0 244px 0;
+  background-image: url("../img/chips.png"), linear-gradient(180deg, #f8f9fc 0, #f8f9fc 849px, #ffffff 850px, #ffffff 100%);
   background-position: bottom -30px right calc(50% - 630px), 0 0;
   background-size: 471px 494px, auto;
   background-repeat: no-repeat, no-repeat;

@@ -159,6 +159,10 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   display: none;
+
+  @include vp-767 {
+    top: calc(50% + 2px);
+  }
 }
 
 .information__wrapper-image-preview {

@@ -1,0 +1,26 @@
+.footer-logo {
+  display: flex;
+  margin-right: 276px;
+  padding-top: 8px;
+
+  @include vp-1199 {
+    margin-right: calc(62px + (277 - 62) * ((100vw - 768px) / (1199 - 768)));
+    padding-top: 2px;
+  }
+
+  @include vp-767 {
+    margin-right: 0;
+    padding-top: 0;
+    height: 19px;
+  }
+}
+
+.footer-logo img {
+  width: 82px;
+  height: 18px;
+
+  @include vp-767 {
+    width: 68px;
+    height: 15px;
+  }
+}
