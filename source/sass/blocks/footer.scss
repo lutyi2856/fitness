@@ -129,26 +129,18 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  background-color: $color-default-white;
 
 
-  &:hover .footer__icon-background {
-    fill: $color-additional-accent;
-  }
-
-  &:hover .footer__icon-path {
-    fill: $color-default-white;
-  }
-
-  &:focus-visible .footer__icon-background {
-    fill: $color-additional-accent;
-  }
-
-  &:focus-visible .footer__icon-path {
-    fill: $color-default-white;
+  &:hover {
+    background-color: $color-additional-accent;
+    color: $color-default-white;
   }
 
   &:focus-visible {
     outline: none;
+    background-color: $color-additional-accent;
+    color: $color-default-white;
   }
 
   &:active .footer__icon-background {

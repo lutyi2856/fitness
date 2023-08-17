@@ -194,8 +194,8 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
+  width: 20px;
+  height: 36px;
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
@@ -673,4 +673,65 @@ button.swiper-pagination-bullet {
   border: 1px solid #102654;
   display: none;
   transition: display 0.3s ease;
+}
+
+.swiper-button-prev--mod {
+  left: -56px;
+
+  @media (max-width: (1200px - 1px)) {
+    left: calc(50% - 342px);
+  }
+
+  @media (max-width: (768px - 1px)) {
+    left: calc(50% - 145px);
+  }
+  
+}
+
+.swiper-button-prev__icon {
+  z-index: 2;
+}
+
+.swiper-button-next--mod {
+  right: -56px;
+
+  @media (max-width: (1200px - 1px)) {
+    right: calc(50% - 342px);
+  }
+
+  @media (max-width: (768px - 1px)) {
+    right: calc(50% - 145px);
+  }
+}
+
+.swiper-button-next__icon {
+  z-index: 2;
+}
+
+.swiper-button-prev--comments {
+  left: 244px;
+
+  @media (max-width: (1200px - 1px)) {
+    left: calc(50% - 340px);
+  }
+
+  @media (max-width: (768px - 1px)) {
+    left: calc(50% - 145px);
+    top: calc(50% - 6px);
+    font-size: 20px;
+  }
+}
+
+.swiper-button-next--comments {
+  right: 244px;
+
+  @media (max-width: (1200px - 1px)) {
+    right: calc(50% - 340px);
+  }
+
+  @media (max-width: (768px - 1px)) {
+    right: calc(50% - 145px);
+    top: calc(50% - 6px);
+    font-size: 20px;
+  }
 }

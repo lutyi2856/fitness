@@ -1,6 +1,5 @@
 const videoWrapper = document.querySelector('.information__wrapper-video');
 
-
 if (videoWrapper) {
   const videoLink = videoWrapper.querySelector('.information__video-link');
   const playButton = videoWrapper.querySelector('.information__play-button');

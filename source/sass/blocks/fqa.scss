@@ -1,5 +1,5 @@
 .fqa {
-  padding: 120px 0 88px 0;
+  padding: 120px 0 114px 0;
   background-color: $color-additional-background;
 
   @include vp-1199 {
@@ -190,7 +190,7 @@
   flex-wrap: wrap;
   padding: 0;
   margin-left: auto;
-  transition: background-color, stroke $trans-default;
+  transition: background-color, color $trans-default;
   background-color: $color-transparent;
   text-transform: uppercase;
   cursor: pointer;
@@ -198,26 +198,18 @@
 
   &:hover {
     background-color: $color-advantage-pivotal;
-  }
-
-  &:hover .fqa__accordion-button-plus-color {
-    stroke: $color-default-white;
+    color: $color-default-white;
   }
 
   &:focus-visible {
     background-color: $color-advantage-pivotal;
-  }
-
-  &:focus-visible .fqa__accordion-button-plus-color {
-    stroke: $color-default-white;
+    color: $color-default-white;
+    outline: none;
   }
 
   &:active {
     background-color: $color-advantage-pivotal;
-  }
-
-  &:active .fqa__accordion-button-plus-color {
-    stroke: $color-default-white;
+    color: $color-default-white;
   }
 
   &:disabled {

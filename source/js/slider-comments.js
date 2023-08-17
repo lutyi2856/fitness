@@ -7,8 +7,8 @@ export function initializeSwiperComments() {
     rtl: false,
     direction: 'horizontal',
     navigation: {
-      nextEl: '.swiper-comments__button-next',
-      prevEl: '.swiper-comments__button-prev',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 

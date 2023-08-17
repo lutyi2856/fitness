@@ -33,42 +33,6 @@
   }
 }
 
-.swiper-comments__button-next {
-  left: 244px;
-
-  @include vp-1199 {
-    left: calc(50% - 340px);
-  }
-
-  @include vp-767 {
-    left: calc(50% - 145px);
-    top: calc(50% - 6px);
-    font-size: 20px;
-  }
-}
-
-.swiper-comments__button-prev {
-  right: 244px;
-
-  @include vp-1199 {
-    right: calc(50% - 340px);
-  }
-
-  @include vp-767 {
-    right: calc(50% - 145px);
-    top: calc(50% - 6px);
-    font-size: 20px;
-  }
-}
-
-.swiper-comments__next-icon {
-  z-index: 2;
-}
-
-.swiper-comments__prev-icon {
-  z-index: 2;
-}
-
 .swiper-comments__wrapper-image {
   display: flex;
   flex-wrap: wrap;
