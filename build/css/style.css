@@ -5176,7 +5176,7 @@ button,
 }
 .contacts__field-name input:focus-visible {
   outline: 1px solid #ffffff;
-  border-bottom: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 .contacts__field-name input:focus-visible::-webkit-input-placeholder {
   opacity: 0;

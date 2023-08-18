@@ -126,7 +126,7 @@
 
   &:focus-visible {
     outline: 1px solid $color-default-white;
-    border-bottom: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
 
   &:focus-visible::placeholder {
